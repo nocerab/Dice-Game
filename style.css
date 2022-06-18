@@ -5,6 +5,9 @@ body {
 
 h1 {
     text-align: center;
+    font-size: 40px;
+    font-family:'Trebuchet MS';
+    color: rgb(255, 255, 45);
 
 }
 
@@ -23,7 +26,16 @@ p {
     border-radius: 20px;
     padding: 16px 25px 16px 25px;
     font-size: 30px;
+    font-family: Cambria,;
 }
 .bottom {
     padding-top: 20px;
+}
+
+.button:hover{
+    background: #58C837;
+}
+
+p{
+    color: #11EEC3;
 }

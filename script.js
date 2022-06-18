@@ -24,15 +24,28 @@ function changeName2(){
 function rollDice() {
      
         let randomNumber1 = Math.floor(Math.random() * 6) + 1;
+        document.querySelector(".img1").setAttribute ("src", "dice" + randomNumber1 + ".png");
+
         let randomnumber2 = Math.floor(Math.random() * 6) + 1;
+        document.querySelector(".img2").setAttribute ("src", "dice" + randomnumber2 + ".png");
+
         let randomNumber3 = Math.floor(Math.random() * 6) + 1;
+        document.querySelector(".img3").setAttribute ("src", "dice" + randomNumber3 + ".png");
+
         let randomnumber4 = Math.floor(Math.random() * 6) + 1;
+        document.querySelector(".img4").setAttribute ("src", "dice" + randomnumber4 + ".png");
 
-    
 
-    document.querySelector(".img1").setAttribute ("src", "dice" + randomNumber1 + ".png");
-    document.querySelector(".img2").setAttribute ("src", "dice" + randomnumber2 + ".png");
-    document.querySelector(".img3").setAttribute ("src", "dice" + randomNumber3 + ".png");
-    document.querySelector(".img4").setAttribute ("src", "dice" + randomnumber4 + ".png");
+//deciding the winner bellow
+    if (randomNumber1 + randomnumber2 === randomNumber3 + randomnumber4) {
+        document.querySelector("h1").innerHTML = "It's a tie!"
+    }
 
+    else if (randomNumber1 + randomnumber2 > randomNumber3 + randomnumber4) {
+        document.querySelector("h1").innerHTML = (player1 + " Wins!");
+    }
+
+    else {
+        document.querySelector("h1").innerHTML = (player2 + " Wins!");
+    }
 }
