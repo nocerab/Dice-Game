@@ -1,0 +1,29 @@
+body {
+    background-color: #E13D1E ;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+.dice {
+    text-align: center;
+    display: inline block;
+    margin: 10px;
+}
+
+p {
+    font-size: 40px;
+}
+
+.button {
+    background: #2E9C1F ;
+    border-radius: 20px;
+    padding: 16px 25px 16px 25px;
+    font-size: 30px;
+}
+.bottom {
+    padding-top: 20px;
+}
