@@ -18,3 +18,14 @@ function changeName2(){
     document.querySelector("p.Player2").innerHTML = player2;
 
 }
+
+//Making the dice roll
+
+function rollDice() {
+     
+        let randomNumber1 = Math.floor(Math.random() * 6) + 1;
+        console.log(randomNumber1);
+    
+
+    document.querySelector(".img1").setAttribute ("src", "dice2.png");
+}
